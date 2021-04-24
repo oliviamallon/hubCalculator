@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TESTING</title>
+    <script src="HubMeal.js"></script>
+    <link rel="stylesheet" href="HubMeal.css">
+    </style>
+
+<body onload="start();">
+
+    <div id="wrapper">
+
+        <h1>The Hub Meal Calculator</h1>
+        <form action="#">
+            <p>
+                Number of people in household:
+                <input type="text" id="numPeople" name="numPeople" size="10" maxlength="2">
+            </p>
+        </form>
+
+        <input type="submit" class="btn" id="subNumberPeople" onclick="noPeople();">
+        <div id="names"></div>
+
+        <div id="tblCosts">
+            <table id="costs">
+                <tr id="titles">
+                    <td>Day of Week</td>
+                    <td>Cost</td>
+                    <td>No. People</td>
+                </tr>
+                <tr id="mon">
+                    <td>Monday</td>
+                    <td>
+
+                        <input type="currency" placeholder="0.00" size="5" min="0.00" max="10000.00" maxlength="6"
+                            step="0.01" name="cost" id="cost1">
+                    </td>
+                    <td>
+                        <input type="number" placeholder="0" class="people" min="0" step="1" size="5" maxlength="2"
+                            name="people" id="people1">
+                    </td>
+                </tr>
+                <tr id="tues">
+                    <td>Tuesday</td>
+                    <td>
+                        <input type="currency" placeholder="0.00" size="5" min="0.00" max="10000.00" maxlength="6"
+                            step="0.01" name="cost" id="cost2">
+                    </td>
+                    <td>
+                        <input type="number" placeholder="0" class="people" min="0" step="1" size="5" maxlength="2"
+                            name="people" id="people2">
+                    </td>
+                </tr>
+                <tr id="wed">
+                    <td>Wednesday</td>
+                    <td>
+                        <input type="currency" placeholder="0.00" size="5" min="0.00" max="10000.00" maxlength="6"
+                            step="0.01" name="cost" id="cost3">
+                    </td>
+                    <td>
+                        <input type="number" placeholder="0" class="people" min="0" step="1" size="5" maxlength="2"
+                            name="people" id="people3">
+                    </td>
+                </tr>
+                <tr id="thurs">
+                    <td>Thursday</td>
+                    <td>
+                        <input type="currency" placeholder="0.00" size="5" min="0.00" max="10000.00" maxlength="6"
+                            step="0.01" name="cost" id="cost4">
+                    </td>
+                    <td>
+                        <input type="number" placeholder="0" class="people" min="0" step="1" size="5" maxlength="2"
+                            name="people" id="people4">
+                    </td>
+                </tr>
+
+
+            </table>
+            <br>
+            <input type="button" class="btn" value="Submit" onclick="costMeals();" />
+
+        </div>
+
+        <div id="here">
+
+        </div>
+        <br>
+        <br>
+
+
+        <div id="tblOutput">
+            <table id="outputTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Spent</th>
+                    <th>Meal Costs</th>
+                    <th>Amount</th>
+                    <th>Owes/Owed</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
