@@ -1,20 +1,26 @@
 * {
     font-family:Merriweather Sans,-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,sans-serif;;
     color: #113a5b;
+    background-color:#113a5b;
+    
 }
 
 td, th{
     border:solid black 1px;
     padding:10px;
     color:black;
+    font-size:100%;
+    overflow: hidden;
+    
 }
 
 table {
+    table-layout:fixed;
     border-collapse: collapse;
     margin-left: auto;
     margin-right:auto;
     color:black;
-    
+    width:100%;
 }
 
 .owes{
@@ -35,6 +41,8 @@ table {
     text-align: center;
     margin-left: auto;
     margin-right:auto;
+    width:90%;
+    background-color:white;
     
 }
 
@@ -44,7 +52,12 @@ table {
 }
 
 h1{
+    background-color: white;
     display:inline;
+}
+
+p, input, b, #tblCosts, table,h2,#noWeeks, td, th, #names, #tblOutput, span {
+    background-color: white;
 }
 
 .btn {
